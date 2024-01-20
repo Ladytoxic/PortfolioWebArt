@@ -1,0 +1,35 @@
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.2rem;
+}
+
+.list {
+    border-radius: 2.5rem;
+    list-style: none;
+    font-size: 0.9rem;
+    padding: 0.3rem 1rem;
+}
+
+.item {
+    display: inline-block;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 0.2rem 0.5rem;
+    transition-property: background;
+    transition-duration: 0.3s;
+}
+
+.item:hover {
+    background-color: rgb(55, 55, 55);
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}

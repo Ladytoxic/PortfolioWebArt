@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Onest', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  color: white;
+  width: 100%;
+  min-height: 100vh;
+  background: radial-gradient(ellipse at 50% -20%, rgb(115, 0, 113), rgba(0, 0, 0, 0.9));
+}
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+  z-index: 10;
+}
+
+nav,
+main,
+section,
+div,
+h1,
+h2,
+footer {
+  animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.hero {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  min-height: 90vh;
+  max-width: 680px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.hero .image-profile {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  padding: 0.2rem;
+  background: linear-gradient(to top, #0097fc, #ff65bf, #f3f2f2, #ff65bf, #0097fc);
+}
+
+h1 {
+  font-size: 3rem;
+  text-wrap: balance;
+}
+
+h2 {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  text-wrap: pretty;
+}
+
+.text-important {
+  color: rgb(247, 232, 157);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+section {
+  margin: auto;
+  max-width: 680px;
+  padding: 1rem;
+}
+
+section .title-section {
+  font-weight: 600;
+  font-size: 2.3rem;
+  text-wrap: balance;
+  width: fit-content;
+}
+
+.title-sub {
+  border-bottom: 1px white solid;
+}
+
+.card {
+  border-left: 1px solid #ffffffe5;
+  padding: 1rem;
+  position: relative;
+}
+
+.decor {
+  width: 10px;
+  height: 10px;
+  background-color: #ffffffe5;
+  position: absolute;
+  top: 1.4rem;
+  left: -0.32rem;
+  border-radius: 50%;
+}
+
+.card .badge {
+  color: rgb(148, 138, 193);
+  font-size: 0.9rem;
+}
+
+.card p {
+  text-wrap: pretty;
+}
+
+.card .card-img {
+  width: 100%;
+  aspect-ratio: 2/1;
+  object-fit: cover;
+  object-position: top;
+  margin: 1rem auto;
+  border-radius: 1rem;
+}
+
+.list-badge {
+  display: flex;
+  gap: 0.2rem;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  margin: 0.5rem 0;
+
+}
+
+.code {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.2rem 0.7rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.283);
+}
+
+.card-list-links {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card-link {
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px rgba(255, 255, 255, 0.183) solid;
+  transition: 0.3s scale;
+  padding-right: 1rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.card-link:hover {
+  scale: 1.05;
+}
+
+.contact {
+  min-height: 90dvh;
+}
+
+form {
+  display: block;
+}
+
+input {
+  margin: 0.7rem auto;
+  display: block;
+  background: none;
+  padding: 0.5rem 1rem;
+  border: 1px solid violet;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 320px;
+  color: #f3f2f2;
+}
+
+input[type="submit"] {
+  margin: 1rem auto;
+  width: fit-content;
+  background-color: purple;
+  font-weight: 600;
+}
+
+.messager {
+  min-height: 10rem;
+  text-align: start;
+}
+
+footer {
+  margin: auto;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-social .footer-link-social {
+  transition: 0.3s scale;
+}
+
+.footer-social .footer-link-social:hover {
+  scale: 1.2;
+}
+
+.fade-in {
+  animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.slide-in-top {
+  animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

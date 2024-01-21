@@ -7,21 +7,25 @@ const HomePage = () => {
 
   const experiencia = [
     {
+      "id": 1,
       "status": "Actualmente",
       "company": "Lady Toxic",
       "duration": "Actualidad",
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est quidem quos veniam, in nulla, impedit eum voluptas perspiciatis, voluptate natus dolor eos. Reprehenderit, dolorem? Voluptas recusandae repudiandae laborum nobis rerum."
     },
     {
+      "id": 2,
       "status": "Junio 2022 - Marzo 2023",
       "company": "Alexeo's Catering",
       "duration": "Junio 2022 - Marzo 2023",
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est quidem quos veniam, in nulla, impedit eum voluptas perspiciatis, voluptate natus dolor eos. Reprehenderit, dolorem? Voluptas recusandae repudiandae laborum nobis rerum."
     }
   ]
+  
 
   const proyectos = [
     {
+      "id": 1,
       "title": "La Zorreria Web",
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est quidem quos veniam, in nulla, impedit eum voluptas perspiciatis, voluptate natus dolor eos. Reprehenderit, dolorem? Voluptas recusandae repudiandae laborum nobis rerum.",
       "badges": ["React", "Axios"],
@@ -30,6 +34,7 @@ const HomePage = () => {
       "imageSrc": "./lazorreria.png"
     },
     {
+      "id": 2,
       "title": "My Tinerary",
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est quidem quos veniam, in nulla, impedit eum voluptas perspiciatis, voluptate natus dolor eos. Reprehenderit, dolorem? Voluptas recusandae repudiandae laborum nobis rerum.",
       "badges": ["Node", "Express.js", "React", "MongoDB"],
@@ -38,6 +43,7 @@ const HomePage = () => {
       "imageSrc": "./my-tinerary.png"
     },
     {
+      "id": 3,
       "title": "Integración de Mercadopago",
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est quidem quos veniam, in nulla, impedit eum voluptas perspiciatis, voluptate natus dolor eos. Reprehenderit, dolorem? Voluptas recusandae repudiandae laborum nobis rerum.",
       "badges": ["Node", "Express.js", "Mercadopago CheckOut Pro"],
@@ -46,6 +52,7 @@ const HomePage = () => {
       "imageSrc": null
     },
     {
+      "id": 4,
       "title": "Amazing Events",
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est quidem quos veniam, in nulla, impedit eum voluptas perspiciatis, voluptate natus dolor eos. Reprehenderit, dolorem? Voluptas recusandae repudiandae laborum nobis rerum.",
       "badges": ["Vue3", "Vue-Router", "Fetch"],
@@ -54,7 +61,7 @@ const HomePage = () => {
       "imageSrc": "./Amazing_Events_vue.png"
     }
   ]
-
+  
   return (
     <>
       <header>

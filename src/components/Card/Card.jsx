@@ -1,4 +1,4 @@
-import React from './Card.css';
+import './Card.css';
 import { GithubFill, Globe } from 'akar-icons';
 
 const Card = ({ data }) => {
